@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
+
+    <!-- Scripts -->
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="content__container">
+
+        <h1>Ajuda aos necessitados</h1>
+        <h2>Calculadora de materiais</h2>
+
+    <form class="rarity__form">
+
+        <label for="tipo">Selecione o tipo de equipamento</label>
+        <select name="type" id="tipo" required>
+            <option value="">Selecione o tipo</option>
+            <option value="1">Arma</option>
+            <option value="2">Item Secundário</option>
+            <option value="3">Armadura</option>
+            <option value="4">Acessório</option>
+        </select>
+        
+        <label for="raridade">Raridade do item</label>
+        <select name="rarity" id="raridade" required>
+            <option value="">Selecione a raridade</option>
+            <option value="1">épico</option>
+            <option value="2">lendário</option>
+        </select>
+
+
+        <label for="quantidade">Quantidade de itens a serem feitos</label>
+        <input type="number" max="8" name="quantidade" id="quantidade" required>
+
+        <h3>Materias que ja tem:</h3>
+
+        <label for="aço">Aço/Platina</label>
+
+        <input type="number" name="mat_1" id="aço" required>
+        
+        <label for="quintessencia">Quintessência/Pedra luminescente/Esfera perversa</label>
+        
+        <input type="number" name="mat_2" id="quintessencia" required>
+
+        <label for="buginganga">Buginganga/Pedra de Anima/Esfera De sombra lunar</label>
+
+        <input type="number" name="mat_3" id="buginganga" required>
+
+        
+
+        <button class="submit">CALCULAR</button>
+
+    </form>
+    
+    <p></p>
+
+    </div>
+</body>
+</html>
