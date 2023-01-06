@@ -21,7 +21,7 @@ function verificaItem() {
 
    }else if(type.value =='2'){
 
-    objItem.value = 400000
+    objItem.value = 800000
 
    }else{
 
