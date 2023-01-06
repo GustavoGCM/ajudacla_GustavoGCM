@@ -49,12 +49,14 @@ function calcularItem () {
     btnSubmit.addEventListener('click', (e) => {
 
         e.preventDefault()
+        
 
         const itemData = verificaItem()
         let parametroDS = 0
         let parametroPO = 0
         let dsTotal = 0
         let poTotal = 0
+
 
         if (itemData.rarity == 1) {
             
@@ -74,14 +76,20 @@ function calcularItem () {
         let açoDS = material1.value*parametroDS
         let açoPO = material1.value*parametroPO
 
-        let mat2DS = material3.value*parametroDS
-        let mat2PO = material3.value*parametroPO
+        let mat2DS = material2.value*parametroDS
+        let mat2PO = material2.value*parametroPO
 
         let mat3DS = material3.value*parametroDS
         let mat3PO = material3.value*parametroPO
 
+        console.log(açoDS);
+        console.log(mat2DS);
+        console.log(mat3DS);
+
         dsTotal = dsTotal + (itemData.value * itemData.quant) - açoDS - mat2DS - mat3DS
         poTotal = poTotal - açoPO - mat2PO - mat3PO
+
+        console.log(itemData.value);
 
         result.innerHTML = `Você precisa de ${poTotal} pó brilhante, ${dsTotal} de Dark Stell.`
 
