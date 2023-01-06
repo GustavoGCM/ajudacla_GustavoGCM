@@ -86,3 +86,8 @@ p{
     display: none;
 
 }
+
+p{
+    align-self: center;
+    text-align: center;
+}

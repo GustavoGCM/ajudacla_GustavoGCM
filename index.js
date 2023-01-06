@@ -56,7 +56,7 @@ function calcularItem () {
         let dsTotal = 0
         let poTotal = 0
 
-        if (itemData.rarity = 1) {
+        if (itemData.rarity == 1) {
             
             parametroDS = 5000
             parametroPO = 25
